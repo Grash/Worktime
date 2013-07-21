@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/worktime_text"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/button_clear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.98"
+        android:text="@string/button_clear" 
+        android:onClick="clearData"/>
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/button_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_in" 
+        android:onClick="inWork" />
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/button_start_break"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_start_break" 
+        android:onClick="startBreak" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/button_stop_break"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_stop_break" 
+        android:onClick="stopBreak" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/button_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_out" 
+        android:onClick="outWork" />
+
+</LinearLayout>
